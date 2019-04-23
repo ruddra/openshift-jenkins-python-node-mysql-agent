@@ -4,7 +4,7 @@ LABEL maintainer="me@ruddra.com"
 
 # Install miniconda
 USER root
-RUN yum install -y bzip2 gcc python-devel mysql-devel
+RUN yum install -y bzip2 gcc python-devel mysql-devel sqlite
 
 ENV NPM_CONFIG_PREFIX=$HOME/.npm-global \
     PATH=$HOME/node_modules/.bin/:$HOME/.npm-global/bin/:$PATH
